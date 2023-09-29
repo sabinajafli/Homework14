@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./src/css/style.css" />
+  </head>
+  <body>
+    <div class="slider-container">
+      <div class="slider">
+        <img src="./src/image/1.jpg" alt="" id="sliderImg" />
+      </div>
+      <div class="icons">
+        <i class="fa-solid fa-chevron-left" id="prev"></i>
+        <i class="fa-solid fa-chevron-right" id="next"></i>
+      </div>
+    </div>
+
+    <swiper-container
+      style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff"
+      class="mySwiper"
+      thumbs-swiper=".mySwiper2"
+      loop="true"
+      space-between="10"
+      navigation="true"
+    >
+      <swiper-slide>
+        <img src="./src/image/8.jpg" />
+      </swiper-slide>
+      <swiper-slide>
+        <img src="./src/image/7.jpg" />
+      </swiper-slide>
+      <swiper-slide>
+        <img src="./src/image/5.jpg" />
+      </swiper-slide>
+      <swiper-slide>
+        <img src="./src/image/4.webp" />
+      </swiper-slide>
+      <swiper-slide>
+        <img src="./src/image/3.webp" />
+      </swiper-slide>
+      <swiper-slide>
+        <img src="./src/image/2.webp" />
+      </swiper-slide>
+      <swiper-slide>
+        <img src="./src/image/1.jpg" />
+      </swiper-slide>
+    </swiper-container>
+
+    <swiper-container
+      class="mySwiper2"
+      loop="true"
+      space-between="10"
+      slides-per-view="4"
+      free-mode="true"
+      watch-slides-progress="true"
+    >
+      <swiper-slide>
+        <img src="./src/image/8.jpg" />
+      </swiper-slide>
+      <swiper-slide>
+        <img src="./src/image/7.jpg" />
+      </swiper-slide>
+      <swiper-slide>
+        <img src="./src/image/5.jpg" />
+      </swiper-slide>
+      <swiper-slide>
+        <img src="./src/image/4.webp" />
+      </swiper-slide>
+      <swiper-slide>
+        <img src="./src/image/3.webp" />
+      </swiper-slide>
+      <swiper-slide>
+        <img src="./src/image/2.webp" />
+      </swiper-slide>
+      <swiper-slide>
+        <img src="./src/image/1.jpg" />
+      </swiper-slide>
+    </swiper-container>
+
+    
+    <div class="todo-app">
+      <p>Todo List</p>
+      <div class="input-box">
+        <input type="text" placeholder="Todo name" id="input">
+        <button id="add-btn">Add</button>
+      </div>
+    <div id="display-todo"></div>
+
+
+    <div class="tab-container">
+      <div class="tabs">
+        <div class="active" data-id="1"><i class="fa-solid fa-user"></i></div>
+        <div data-id="2"><i class="fa-solid fa-location-dot"></i></div>
+        <div data-id="3"><i class="fa-solid fa-bell"></i></div>
+      </div>
+      <div class="content">
+        <div data-id="1" class="show" id="input">
+          <input type="text" placeholder="Userame" />
+          <input type="password" placeholder="Password" />
+          <button type="submit">Log In</button>
+        </div>
+        <div data-id="2">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d194472.7685321035!2d49.69015320013977!3d40.39473700727531!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40307d6bd6211cf9%3A0x343f6b5e7ae56c6b!2zQmFrw7w!5e0!3m2!1str!2saz!4v1695915250908!5m2!1str!2saz"
+            width="244"
+            height="244"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+        <div data-id="3">There is no notification yet.</div>
+      </div>
+    </div>
+
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-element-bundle.min.js"></script>
+  <script src="./src/js/app.js"></script>
+</html>

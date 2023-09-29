@@ -1,0 +1,202 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.slider-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin: 40px;
+}
+
+.slider {
+    width: 600px;
+}
+
+#sliderImg {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 600px;
+    position: absolute;
+    padding: 0 10px;
+    top: 50%;
+}
+
+.icons i {
+    color: #fff;
+    font-size: 25px;
+}
+
+
+
+
+
+
+.todo-app {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin: 100px 0;
+}
+
+.display-todo {
+    width: 264px;
+}
+.task-item {
+    width: 307px !important;
+    display: flex;
+    align-self: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+
+p{
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: 500;
+    color: #5B0888;
+}
+
+
+
+swiper-container {
+    width: 100%;
+    height: 100%;
+  }
+
+  swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+
+  swiper-slide img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+  }
+
+  swiper-container {
+      width: 600px;
+      height: 400px;
+      margin-left: auto;
+      margin-right: auto;
+  }
+
+  swiper-slide {
+      background-size: cover;
+      background-position: center;
+  }
+
+  .mySwiper2 {
+      height: 100px;
+      box-sizing: border-box;
+      padding: 10px 0;
+  }
+
+  .mySwiper2 swiper-slide {
+      width: 25%;
+      height: 100%;
+      opacity: 0.4;
+  }
+
+  .mySwiper2 .swiper-slide-thumb-active {
+      opacity: 1;
+  }
+
+  swiper-slide img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+.tab-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+    margin-top: 40px;
+}
+
+.tabs {
+    display: flex;
+    gap: 60px;
+    border: 1px solid #acacac;
+    padding: 15px 30px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.tabs i {
+    font-size: 25px;
+}
+
+.content {
+    height: 300px;
+    width: 244px;
+}
+
+input {
+    width: 244px;
+    margin-bottom: 15px;
+    height: 30px;
+    padding: 10px;
+    border: 1px solid #acacac;
+    border-radius: 5px;
+    outline: none;
+}
+
+button {
+    padding: 6px 15px;
+    background-color: transparent;
+    border: 2px solid #5B0888;
+    border-radius: 5px;
+    color: #5B0888;
+    font-weight: 700;
+}
+
+button:hover {
+    color: #fff;
+    background-color: #5B0888;
+}
+
+
+.content div {
+    display: none;
+}
+
+.show {
+    display: block !important;
+}
+
+.active {
+    color: #5B0888 !important;
+}
+
